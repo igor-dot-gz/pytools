@@ -1,0 +1,51 @@
+import platform
+print("sysrecon.py ; 6-12-2017")
+print("\nPLATFORM\t\t................................................................")
+print("a_bits\t\t\t", platform.architecture()[0])
+print("a_linkage\t\t", platform.architecture()[1])
+print("machine\t\t\t", platform.machine())
+print("net_node\t\t", platform.node())
+print("platform\t\t", platform.platform())
+print("processor\t\t", platform.processor())
+print("release\t\t\t", platform.release())
+print("system\t\t\t", platform.system())
+print("version\t\t\t", platform.version())
+
+print("\nPYTHON\t\t\t................................................................")
+print("buildno\t\t\t", platform.python_build()[0])
+print("builddate\t\t", platform.python_build()[1])
+print("compiler\t\t", platform.python_compiler())
+print("branch\t\t\t", platform.python_branch())
+print("implementation\t\t", platform.python_implementation())
+print("revision\t\t", platform.python_revision())
+print("version\t\t\t", platform.python_version())
+
+print("\nJAVA\t\t\t................................................................")
+print("release\t\t\t", platform.java_ver()[0])
+print("vendor\t\t\t", platform.java_ver()[1])
+print("vm_name\t\t\t", platform.java_ver()[2][0])
+print("vm_release\t\t", platform.java_ver()[2][1])
+print("vm_vendor\t\t", platform.java_ver()[2][2])
+print("os_name\t\t\t", platform.java_ver()[3][0])
+print("os_release\t\t", platform.java_ver()[3][1])
+print("os_vendor\t\t", platform.java_ver()[3][2])
+
+print("\nWINDOWS\t\t\t................................................................")
+print("release\t\t\t", platform.win32_ver()[0])
+print("version\t\t\t", platform.win32_ver()[1])
+print("csd\t\t\t", platform.win32_ver()[2])
+print("ptype\t\t\t", platform.win32_ver()[3])
+
+print("\nMACOS\t\t\t................................................................")
+print("release\t\t\t", platform.mac_ver()[0])
+print("version\t\t\t", platform.mac_ver()[1][0])
+print("dev_stage\t\t", platform.mac_ver()[1][1])#
+print("non_release_version\t", platform.mac_ver()[1][2])#
+print("machine\t\t\t", platform.mac_ver()[2])
+
+print("\nLINUX\t\t\t................................................................")
+print("release\t\t\t", platform.linux_distribution()[0])
+print("version\t\t\t", platform.linux_distribution()[1])
+print("id\t\t\t", platform.linux_distribution()[2])
+
+foo = input('\nPRESS ENTER TO CONTINUE...')
